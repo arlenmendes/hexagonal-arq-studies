@@ -45,10 +45,6 @@ func (p *Product) Enable() error {
 }
 
 func (p *Product) Disable() error {
-	if p.Status == DISABLED {
-		return errors.New("product is already disabled")
-	}
-
 	p.Status = DISABLED
 	return nil
 }
